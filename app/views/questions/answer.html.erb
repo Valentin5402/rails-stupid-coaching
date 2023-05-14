@@ -1,0 +1,14 @@
+<div class="p-4">
+  <h2>Stupid Coaching</h2>
+
+  <div class="border-start border-5 ps-4 mt-4">
+    <p><strong>You:</strong>
+    <br> "<%= params[:question] %>" </p>
+  </div>
+  <div class="border-start border-5 ps-4 mt-4">
+    <p><strong>Coach:</strong>
+    <br> "<%= @answer %>" </p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path, :class=>"btn btn-primary mt-4" %>
+</div>
